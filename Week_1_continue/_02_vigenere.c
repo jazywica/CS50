@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-#include <cs50.h> // used for 'get_string()'
+#include "cs50.h" // used for 'get_string()'
 
 void encrypt(char l, char k); // declare functions to be used beforehand
 
