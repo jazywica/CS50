@@ -1,4 +1,4 @@
-// Helper functions for converting notes int 'wav' files
+// Helper functions for converting notes (D4@1/8, E4@1/4 or F#4@1/2 etc.) into 'wav' files
 #include <string.h>
 #include <stdio.h>
 #include <ctype.h>
