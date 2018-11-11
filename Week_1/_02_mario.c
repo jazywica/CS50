@@ -7,14 +7,11 @@ int main(void)
 {
     int num; // this is the main input value for rows
 
-    do
-    {
+    do {
         num = get_int("Number: ");
-    }
-    while (num < 0 || num > 23);
+    } while (num < 0 || num > 23);
 
-    for (int i = 0; i < num; i++)
-    {
+    for (int i = 0; i < num; i++) {
         int hash = i + 1;
         int space = num - i - 1;
 
