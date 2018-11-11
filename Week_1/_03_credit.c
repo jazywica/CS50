@@ -1,6 +1,6 @@
 //Validating and determining a credit card type
 #include <stdio.h>
-#include <cs50.h> // used for 'get_long_long()'
+#include "cs50.h" // used for 'get_long_long()'
 
 int main(void)
 {
