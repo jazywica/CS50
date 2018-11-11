@@ -1,6 +1,6 @@
 //Drawing obstacles for Mario game on screen
 #include <stdio.h>
-#include <cs50.h> // used for 'get_int()'
+#include "cs50.h" // used for 'get_int()'
 
 
 int main(void)
