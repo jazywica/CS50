@@ -9,9 +9,9 @@
 // Converts a fraction formatted as X/Y to eighths
 int duration(char *fraction)
 {
-    int nominator = atoi(&fraction[0]); // retrieving an it from a string
+    int nominator = atoi(&fraction[0]); // retrieving an integer from a string
     int denominator = atoi(&fraction[2]);
-    return nominator * (8 / denominator);
+    return nominator * (8 / denominator); // returning the duration of the note in eights
 }
 
 
@@ -29,7 +29,7 @@ int frequency(char *note)
     float freq = 440;
 
     if (strlen(n) > 1) {
-        if (n[1] == '#') // adjusting tones for accidentals
+        if (n[1] == '#') // adjusting tones for accidentals (# nad b)
             freq = freq * pow(2, 1 / 12.0);
         else if (n[1] == 'b')
             freq = freq / pow(2, 1 / 12.0);
@@ -40,7 +40,7 @@ int frequency(char *note)
         freq *= pow(2, adjust);
     }
 
-    if (n[0] == 'B') // adjusting tones themselves in relation to note A
+    if (n[0] == 'B') // adjusting tones in relation to note A
         freq = freq * pow(2, 2 / 12.0);
     else if (n[0] == 'G')
         freq = freq / pow(2, 2 / 12.0);
